@@ -83,7 +83,7 @@
 [ID1]:https://www.jd.com "这是京东"
 [ID2]:https://www.bilibili.com '这是bilibili'
 [ID3]:https://www.zhihu.com (这是知乎)
-[CCF]:www.noi.cn (隐式链接)
+[CCF]:http://www.noi.cn (隐式链接)
 
 有些特别的情况下，单引号包裹的文本无法被识别
 ## 强调示例 ##
