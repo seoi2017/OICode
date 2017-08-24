@@ -113,7 +113,9 @@ __下划线大强调__
 
 就目前而言，Markdown尚且不支持图片的自定义大小、位置，需要使用HTML\CSS的辅助  
 例如使图片居中：
-<center><img src=http://uoj.ac/pictures/UOJ.png></center>
+<center>  
+    <img src=http://uoj.ac/pictures/UOJ.png>  
+</center>
 
 ## 转义字符 ##
 使用‘\\’来将特殊的符号文本化
@@ -138,6 +140,8 @@ __下划线大强调__
     $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
     //行内公式
     \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-行间公式测试$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">  
+</script>
+行间公式测试  
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
 行内公式\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)测试
