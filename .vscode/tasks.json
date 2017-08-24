@@ -1,7 +1,7 @@
 {
     "version": "0.1.0",
     "command": "g++",
-    "args": ["-g","${file}","-o","BASIC"],    // 编译命令参数
+    "args": ["-g","${file}","-o","io/BASIC"],    // 编译命令参数
     "problemMatcher": {
         "owner": "cpp",
         "fileLocation": ["relative", "${workspaceRoot}"],
