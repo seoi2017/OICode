@@ -131,7 +131,7 @@ __星号大强调__
     <img src="http://www.forkosh.com/mathtex.cgi? 在此处插入Latex公式">
 <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
 
-方法三：使用MathJax引擎(本质是脚本生成的文本，使用TeX公式)
+使用MathJax引擎(本质是脚本生成的文本，使用TeX公式)
 
     //加载MathJax引擎
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
