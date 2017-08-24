@@ -89,8 +89,8 @@
 ## 强调示例 ##
 *星号强调*  
 **星号大强调**  
-_星号强调_  
-__星号大强调__  
+_下划线强调_  
+__下划线大强调__  
 在句子 __内部__ 的强调，注意 *前后* 要有空格
 ## 行内代码示例 ##
 在 `行` 中插入 ```代码``` 需要 ``反`` 引号  
@@ -111,11 +111,10 @@ __星号大强调__
 [ID6]:https://pic4.zhimg.com/v2-1ad84a65d460027a333dc7393ed94e57_xl.jpg (这是ZRT)
 [MHR]:https://pic3.zhimg.com/v2-61ebd983a778cad08002560af42715c6_xl.jpg (这是MHR)
 
-就目前而言，Markdown尚且不支持图片的自定义大小、位置，需要使用HTML5的标签辅助
+就目前而言，Markdown尚且不支持图片的自定义大小、位置，需要使用HTML\CSS的辅助  
 例如使图片居中：
-<center>
-    <img src=http://uoj.ac/pictures/UOJ.png>
-</center>
+<center><img src=http://uoj.ac/pictures/UOJ.png></center>
+
 ## 转义字符 ##
 使用‘\\’来将特殊的符号文本化
 ## 自动链接 ##
