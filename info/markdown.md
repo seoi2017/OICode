@@ -30,6 +30,8 @@
 - 无序列表项2
 * 无序列表项3
 1. 有序列表项1
+    1. 次级有序列表项1
+    2. 次级有序列表项2
 2. 有序列表项2
 3. 有序列表项3
 * 同一列表项下的多个段落  
@@ -113,6 +115,7 @@ __下划线大强调__
 
 就目前而言，Markdown尚且不支持图片的自定义大小、位置，需要使用HTML\CSS的辅助  
 例如使图片居中：
+而且，`<center>`和`</center>`并不被Github所支持
 
 <center>  
     <img src=http://uoj.ac/pictures/UOJ.png>  
@@ -123,17 +126,7 @@ __下划线大强调__
 ## 自动链接 ##
 <https://github.com/seoi2017/OICode>
 ## 数学公式 ##
-使用Google Chart的服务器(本质是图片，使用LaTeX公式)
-    
-    <img src="http://chart.googleapis.com/chart?cht=tx&chl= 在此插入Latex公式" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
-
-使用forkosh服务器(本质也是图片，使用LaTeX公式(可能已经炸了))
-
-    <img src="http://www.forkosh.com/mathtex.cgi? 在此处插入Latex公式">
-<img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
-
-使用MathJax引擎(本质是脚本生成的文本，使用TeX公式)
+使用MathJax引擎(本质是脚本生成的文本，使用LaTeX公式)
 
     //加载MathJax引擎
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
@@ -142,11 +135,60 @@ __下划线大强调__
     //行内公式
     \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
-<html>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">  
-    </script>
-</html>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 行间公式测试  
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
 行内公式\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)测试
+
+# Github Markdown 扩展样例 #
+## 带选择框的列表 ##
+- [ ] 列表项1
+    - [ ] 嵌套列表项1
+    - [x] 嵌套列表项2
+- [x] 列表项2
+- [ ] 列表项3
+## GFM代码高亮 ##
+'''cpp
+    #include<iostream>
+    #include<cstdio>
+    using namespace std;
+    int main(){
+        printf("Hello World!\n");
+        return 0;
+    }
+'''
+## 表格文字的对齐方式 ##
+对于第一行下面的短线
+| 什么也不加 | 左侧加引号 | 右边加引号 | 两边都加引号 |  
+|---|:---|---:|:---:|  
+| 是 | 还是 | 是 | 就是 |  
+| 左对齐 | 左对齐 | 右对齐 | 居中对齐 |
+## 呼叫用户 ##
+@MiracleEEEE
+## 定义列表 ##
+列表1
+: 定义1
+列表2
+: 定义2
+列表3
+## 定义式脚注 ##
+这是一个脚注[^1]
+
+[^1]:脚注文本
+## 目录(通常在全文最开头使用) ##
+[TOC]
+## SHA事件引用 ##
+例如下面的这几条
+* SHA: a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* User@SHA: jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* User/Repository@SHA: jlord/sheetsee.js@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* #Num: #26
+* GH-Num: GH-26
+* User#Num: jlord#26
+* User/Repository#Num: jlord/sheetsee.js#26
+## 删除线与加亮突出 ##
+~~删除线效果~~  
+==高亮线效果==
+## Emoji表情 ##
+:+1:
