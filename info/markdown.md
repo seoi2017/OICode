@@ -113,6 +113,11 @@ __下划线大强调__
 [ID6]:https://pic4.zhimg.com/v2-1ad84a65d460027a333dc7393ed94e57_xl.jpg (这是ZRT)
 [MHR]:https://pic3.zhimg.com/v2-61ebd983a778cad08002560af42715c6_xl.jpg (这是MHR)
 
+带链接的图片  
+[![Github]](https://github.com)
+
+[Github]:https://p.ssl.qhimg.com/dmsmfl/120_75_/t01559bc058012d7d66.png?size=280x280&phash=-5431108370711790135 "Github"
+
 就目前而言，Markdown尚且不支持图片的自定义大小、位置，需要使用HTML\CSS的辅助  
 例如使图片居中：
 而且，`<center>`和`</center>`并不被Github所支持
@@ -134,6 +139,7 @@ __下划线大强调__
     $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
     //行内公式
     \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
