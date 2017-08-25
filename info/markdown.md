@@ -140,9 +140,11 @@ __下划线大强调__
     //行内公式
     \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default">
-</script>
+<code>
+    <script type="text/javascript" async 
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default">
+    </script>
+</code>
 
 行间公式测试  
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
