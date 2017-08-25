@@ -149,7 +149,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 - [x] 列表项2
 - [ ] 列表项3
 ## GFM代码高亮 ##
-'''cpp
+```cpp
     #include<iostream>
     #include<cstdio>
     using namespace std;
@@ -157,38 +157,30 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
         printf("Hello World!\n");
         return 0;
     }
-'''
+```
 ## 表格文字的对齐方式 ##
 对于第一行下面的短线
+
 | 什么也不加 | 左侧加引号 | 右边加引号 | 两边都加引号 |  
 |---|:---|---:|:---:|  
 | 是 | 还是 | 是 | 就是 |  
 | 左对齐 | 左对齐 | 右对齐 | 居中对齐 |
-## 呼叫用户 ##
-@MiracleEEEE
+## 定义式脚注 ##
+这是一个脚注[^1]
+
+[^1]:脚注文本
+## 删除线 ##
+~~删除线效果~~  
+## Emoji表情 ##
+:+1:
+# 一些不被Github支持的Markdown的扩展语法 #
+## 加亮突出 ##
+==高亮线效果==
+## 目录(通常在全文最开头使用) ##
+[TOC]
 ## 定义列表 ##
 列表1
 : 定义1
 列表2
 : 定义2
 列表3
-## 定义式脚注 ##
-这是一个脚注[^1]
-
-[^1]:脚注文本
-## 目录(通常在全文最开头使用) ##
-[TOC]
-## SHA事件引用 ##
-例如下面的这几条
-* SHA: a5c3785ed8d6a35868bc169f07e40e889087fd2e
-* User@SHA: jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e
-* User/Repository@SHA: jlord/sheetsee.js@a5c3785ed8d6a35868bc169f07e40e889087fd2e
-* #Num: #26
-* GH-Num: GH-26
-* User#Num: jlord#26
-* User/Repository#Num: jlord/sheetsee.js#26
-## 删除线与加亮突出 ##
-~~删除线效果~~  
-==高亮线效果==
-## Emoji表情 ##
-:+1:
