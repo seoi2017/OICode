@@ -131,7 +131,7 @@ __下划线大强调__
 ## 自动链接 ##
 <https://github.com/seoi2017/OICode>
 ## 数学公式 ##
-使用MathJax引擎(本质是脚本生成的文本，使用LaTeX公式)
+使用MathJax引擎(本质是脚本生成的文本，使用LaTeX公式，但是Github不能用)
 
     //加载MathJax引擎
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
@@ -146,6 +146,9 @@ __下划线大强调__
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
 行内公式\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)测试
 
+使用在线图片渲染网站(本质是根据公式生成的图片，使用LaTeX公式，在某些网站不能显示)
+
+![公式](http://latex.codecogs.com/svg.latex?$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$   "这是数学公式")
 # Github Markdown 扩展样例 #
 ## 带选择框的列表 ##
 - [ ] 列表项1
