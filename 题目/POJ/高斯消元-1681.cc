@@ -1,3 +1,7 @@
+//POJ-1681[Accepted]
+//Tag:[高斯消元（线性代数）]
+//Code By HYS.
+//16ms,1.0MB(952KB),2876B
 #include<iostream>
 #include<cstdio>
 #include<cstdlib>
@@ -39,7 +43,9 @@ inline int FreeYuan(){//异或方程枚举自由元
     for(int i=0;i<s;i++){//二进制枚举所有可能的情况
         int cnt=0;
         for(int j=1;j<=t;j++)//对于每一个自由元赋值
-            if(x[freeyuan[j]]=(bool)(i&(1<<j)))cnt++;//赋值为1的自由元最终对答案肯定有1的贡献
+            if(x[freeyuan[j]]=(bool)(i&(1<<(j-1))))cnt++;//赋值为1的自由元最终对答案肯定有1的贡献
+            //至于为什么是1<<(j-1)，因为统共有效的二进制位有t位，而若右移t位实为移动到了第t+1位，造成WA
+            //但是这题数据太水，不减一竟然能过，但到了POJ1753就过不了了，必须减一
         for(int j=len-t;j>=1;j--){//从最下面一行没有自由元的方程向上消元
             int tmp=mt[j][len+1];//暂存当前方程的增广值
             for(int k=j+1;k<=len;k++){
