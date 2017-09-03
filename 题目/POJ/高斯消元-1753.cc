@@ -39,7 +39,7 @@ inline int Gauss(int mtx[MX][MX]){
     for(int i=0;i<s;i++){
         int cnt=0;
         for(int j=1;j<=t;j++)
-        if(x[freeyuan[j]]=(bool)(i&(1<<(j-1))))cnt++;
+            if(x[freeyuan[j]]=(bool)(i&(1<<(j-1))))cnt++;
         for(int j=16-t;j>=1;j--){
             int tmp=mtx[j][17];
             for(int k=j+1;k<=16;k++){
