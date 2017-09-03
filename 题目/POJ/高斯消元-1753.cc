@@ -19,7 +19,7 @@ inline int Gauss(int mtx[MX][MX]){
         int index=i;
         for(int j=i+1;j<=16;j++)
             if(mtx[j][i]>mtx[index][i])index=j;
-        if(mtx[index][i]==0){l
+        if(mtx[index][i]==0){
             freeyuan[++t]=i;
             continue;
         }
