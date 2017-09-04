@@ -1,3 +1,54 @@
+# One Day You Failed,Ten Days to Wake up.
+```
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+System Check Failed.
+```
 # 仓库信息
 本Git代码仓库托管于Github网站上  
 \*几乎\*所有的Code均出自HYS之手  
