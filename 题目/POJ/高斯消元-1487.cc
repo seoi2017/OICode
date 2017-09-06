@@ -14,7 +14,7 @@ int main(){
     freopen("io/in","r",stdin);
     freopen("io/out","w",stdout);
 #endif
-    
+    scanf();
 #ifdef LOCAL
     fclose(stdin);
     fclose(stdout);
