@@ -1,4 +1,4 @@
-//POJ-1487[Unaccepted]
+//POJ-1487[Accepted]
 //Tag:[高斯消元（线性代数）][DFS（搜索）][数学期望（离散数学）]
 //Code By HYS.
 //0ms,0.2MB(208KB),4125B
