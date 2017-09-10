@@ -184,7 +184,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 # 一些不被Github支持的Markdown的扩展语法 #
 ## 加亮突出 ##
 ==高亮线效果==
-## 目录(通常在全文最开头使用) ##
+## 目录（通常在全文最开头使用） ##
 [TOC]
 ## 定义列表 ##
 列表1
@@ -192,3 +192,19 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 列表2
 : 定义2
 列表3
+## 流程图（需要引用 https://github.com/adrai/flowchart.js 以使用） ##
+st=>start: Start|past:>http://www.google.com[blank]  
+e=>end: End:>http://www.google.com  
+op1=>operation: My Operation|past  
+op2=>operation: Stuff|current  
+sub1=>subroutine: My Subroutine|invalid  
+cond=>condition: Yes 
+or No?|approved:>http://www.baidu.com  
+c2=>condition: Good idea|rejected  
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond  
+cond(yes, right)->c2  
+cond(no)->sub1(left)->op1  
+c2(yes)->io->e  
+c2(no)->op2->e
