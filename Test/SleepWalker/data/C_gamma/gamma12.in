@@ -1,0 +1,11 @@
+10
+a =[1 b c d e f g h i j]
+b =[1 2 c d e f g h i j]
+c =[1 2 3 d e f g h i j]
+d =[1 2 3 4 e f g h i j]
+e =[1 2 3 4 5 f g h i j]
+f =[1 2 3 4 5 6 g h i j]
+g =[1 2 3 4 5 6 7 h i j]
+h =[1 2 3 4 5 6 7 8 i j]
+i =[1 2 3 4 5 6 7 8 9 j]
+j =[1 2 3 4 5 6 7 8 9 0]
