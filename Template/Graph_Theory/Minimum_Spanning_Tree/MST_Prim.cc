@@ -51,7 +51,7 @@ inline int prim(int c)
         Q.pop();
         if (x.len != dis[x.dat])
             continue;        //若已被更新，说明有更优解，舍去
-        vis[x.dat] = 1;      //标记为已访问
+        vis[x.dat] = true;   //标记为已访问
         ans += x.len, cnt++; //已选节点加一，更新答案
         for (edge_t *k = p[x.dat].nxt; k != NULL; k = k->nxt)
         { //更新未选节点到已选节点的距离
