@@ -30,7 +30,7 @@ inline void KMP(char *str, char *c)
     int sptr = 0, cptr = 0;
     while (sptr < slen)
     {
-        if (cptr == clen)
+        if (cptr == clen)   
         {
             printf("%d\n", sptr - clen + 1);
         }

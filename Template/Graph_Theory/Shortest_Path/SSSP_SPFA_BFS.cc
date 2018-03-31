@@ -16,7 +16,7 @@ struct edge_t
     ll_t len;
     edge_t *nxt;
 } p[N + (M << 1)];
-int top, n, m, st;
+int top, n, m, st, Q[M], head, tail;
 ll_t dis[N];
 bool vis[N];
 inline void add_edge(int x, int y, ll_t l)
@@ -27,13 +27,12 @@ inline void SPFA(int c)
 {
     memset(dis, 0x3F, sizeof(dis));
     dis[c] = 0LL;
-    queue<int> Q;
-    Q.push(c);
+    head = tail = N;
+    Q[++head] = c;
     vis[c] = true;
-    while (!Q.empty())
+    while (head != tail)
     {
-        int x = Q.front();
-        Q.pop();
+        int x = Q[++tail];
         vis[x] = false;
         for (edge_t *k = p[x].nxt; k != NULL; k = k->nxt)
         {
@@ -42,7 +41,11 @@ inline void SPFA(int c)
                 dis[k->dat] = dis[x] + k->len;
                 if (!vis[k->dat])
                 {
-                    Q.push(k->dat);
+                    //SLF优化
+                    if (dis[k->dat] < Q[tail + 1])
+                        Q[tail--] = k->dat;
+                    else
+                        Q[++head] = k->dat;
                     vis[k->dat] = true;
                 }
             }

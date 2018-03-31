@@ -27,19 +27,12 @@ int find_father(int x) //找到祖先节点，附带路径压缩
 {
     return father[x] == x ? x : father[x] = find_father(father[x]);
 }
-int main()
+inline void Kruskal()
 {
-#ifdef LOCAL
-    freopen("io/in", "r", stdin);
-    freopen("io/out", "w", stdout);
-#endif
-    scanf("%d%d", &n, &m);
     for (int i = 1; i <= n; i++)
         father[i] = i, ranking[i] = 1; //初始化父节点和秩数组
-    for (int i = 1; i <= m; i++)
-        scanf("%d%d%lld", &e[i].start, &e[i].end, &e[i].length);
-    sort(e + 1, e + 1 + m, cmp); //按边权从小到大排序
-    for (int i = 1; i <= m; i++) //枚举边
+    sort(e + 1, e + 1 + m, cmp);       //按边权从小到大排序
+    for (int i = 1; i <= m; i++)       //枚举边
     {
         int x = find_father(e[i].start), y = find_father(e[i].end);
         if (x == y) //若该边的两个端点已经合并过则跳过
@@ -53,6 +46,17 @@ int main()
         if (cnt == n - 1)          //已求出生成树
             break;
     }
+}
+int main()
+{
+#ifdef LOCAL
+    freopen("io/in", "r", stdin);
+    freopen("io/out", "w", stdout);
+#endif
+    scanf("%d%d", &n, &m);
+    for (int i = 1; i <= m; i++)
+        scanf("%d%d%lld", &e[i].start, &e[i].end, &e[i].length);
+    Kruskal();
     cnt < n - 1 ? printf("orz\n") : printf("%lld\n", tot_length); //最终边数量不足n-1则无解
 #ifdef LOCAL
     fclose(stdin);
